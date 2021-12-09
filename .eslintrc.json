@@ -1,0 +1,83 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+		"webextensions": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "rules": {
+        /////////// general //////////////
+        "indent": ["warn", "tab"],
+        "linebreak-style": ["warn", "unix"],
+        "semi": ["warn", "always"],
+        "block-spacing": "warn",
+        "space-before-blocks": "warn",
+        "space-in-parens": "warn",
+        "no-multi-spaces": "warn",
+        "no-trailing-spaces": "warn",
+        "no-unused-vars": "off",
+        /////////// strings //////////////
+        "quotes": ["warn", "single"],
+        /////////// delimiters ///////////
+        "semi-spacing": "warn",
+        "semi-style": "warn",
+        "comma-dangle": "warn",
+        "comma-spacing": "warn",
+        "comma-style": "warn",
+        /////////// operators ////////////
+        "space-infix-ops": "warn",
+        "space-unary-ops": "warn",
+        "operator-linebreak": [
+            "warn",
+            "after",
+            {
+                "overrides": {
+                    "=": "none"
+                }
+            }
+        ],
+        /////////// comments /////////////
+        "spaced-comment": "warn",
+        /////////// functions ////////////
+        "func-call-spacing": ["warn", "never"],
+        "space-before-function-paren": ["warn", "never"],
+        /////////// arrays ///////////////
+        "array-bracket-spacing": "warn",
+        "array-bracket-newline": [
+            "warn",
+            {
+                "multiline": true
+            }
+        ],
+        "array-element-newline": [
+            "warn",
+            {
+                "multiline": true
+            }
+        ],
+        /////////// objects //////////////
+        "key-spacing": "warn",
+        "object-curly-spacing": "warn",
+        "object-curly-newline": [
+            "warn",
+            {
+                "multiline": true
+            }
+        ],
+        "object-property-newline": [
+            "warn",
+            {
+                "allowAllPropertiesOnSameLine": false
+            }
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+	"name": "Google Meet Autopilot",
+	"description": "Automatically joins Google Meet so you never miss a class",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"storage"
+	]
+}
